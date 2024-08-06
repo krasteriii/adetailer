@@ -242,6 +242,8 @@ class AfterDetailerScript(scripts.Script):
         all_inputs = []
 
         for n, arg_dict in enumerate(args, 1):
+            arg_dict['ad_prompt'] = arg_dict.get('ad_prompt', '') or ''
+            arg_dict['ad_negative_prompt'] = arg_dict.get('ad_negative_prompt', '') or ''
             try:
                 inp = ADetailerArgs(**arg_dict)
             except ValueError as e:
