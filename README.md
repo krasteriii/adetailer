@@ -74,10 +74,17 @@ API request example: [wiki/REST-API](https://github.com/Bing-su/adetailer/wiki/R
 
 | Model                 | Target                | mAP 50                        | mAP 50-95                     |
 | --------------------- | --------------------- | ----------------------------- | ----------------------------- |
+| deepfashion2_yolov8s-seg.pt | realistic clothes   | 0.849 (bbox)<br/>0.840 (mask) | 0.763 (bbox)<br/>0.675 (mask) |
+| face_yolov8m.pt       | 2D / realistic face   | 0.737                         | 0.424                         |
 | face_yolov8n.pt       | 2D / realistic face   | 0.660                         | 0.366                         |
+| face_yolov8n_v2.pt    | 2D / realistic face   | 0.669                         | 0.372                         |
 | face_yolov8s.pt       | 2D / realistic face   | 0.713                         | 0.404                         |
+| face_yolov9c.pt       | 2D / realistic face   | 0.748                         | 0.43                          |
 | hand_yolov8n.pt       | 2D / realistic hand   | 0.767                         | 0.505                         |
+| hand_yolov8s.pt       | 2D / realistic hand   | 0.794                         | 0.5273                        |
+| hand_yolov9c.pt       | 2D / realistic hand   | 0.810                         | 0.550                         |
 | person_yolov8n-seg.pt | 2D / realistic person | 0.782 (bbox)<br/>0.761 (mask) | 0.555 (bbox)<br/>0.460 (mask) |
+| person_yolov8m-seg.pt | 2D / realistic person | 0.849 (bbox)<br/>0.831 (mask) | 0.636 (bbox)<br/>0.533 (mask) |
 | person_yolov8s-seg.pt | 2D / realistic person | 0.824 (bbox)<br/>0.809 (mask) | 0.605 (bbox)<br/>0.508 (mask) |
 | mediapipe_face_full   | realistic face        | -                             | -                             |
 | mediapipe_face_short  | realistic face        | -                             | -                             |
